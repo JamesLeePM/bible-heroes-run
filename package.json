@@ -1,0 +1,24 @@
+{
+  "name": "bible-run",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Bible Run — Adventures of Joshua & Caleb",
+  "author": "James Lee",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^7.2.0",
+    "@capacitor/core": "^7.2.0",
+    "@capacitor/ios": "^7.2.0",
+    "@capacitor/splash-screen": "^7.0.5"
+  }
+}
