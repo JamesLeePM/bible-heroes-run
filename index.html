@@ -1,122 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <meta name="theme-color" content="#000000" />
-    <title>Bible Heroes Run</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background: #000;
-        touch-action: none;
-      }
-      #splash {
-        position: fixed;
-        inset: 0;
-        z-index: 100;
-        background: #ffd700;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: opacity 0.6s ease;
-      }
-      #splash.hidden {
-        opacity: 0;
-        pointer-events: none;
-      }
-      #splash .cross {
-        font-size: clamp(36px, 10vw, 64px);
-        margin-bottom: 16px;
-      }
-      #splash h1 {
-        font-family: "Press Start 2P", monospace;
-        font-size: clamp(18px, 5vw, 36px);
-        color: #1a1a1a;
-        text-align: center;
-        text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.4);
-      }
-      #splash-loading {
-        font-family: "Press Start 2P", monospace;
-        font-size: clamp(8px, 2vw, 12px);
-        color: #2d1b6e;
-        margin-top: 20px;
-        text-align: center;
-        max-width: 90vw;
-        line-height: 1.6;
-      }
-      #splash-bar-wrap {
-        width: min(320px, 78vw);
-        height: 8px;
-        background: rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        margin-top: 14px;
-        overflow: hidden;
-      }
-      #splash-bar {
-        height: 100%;
-        width: 0%;
-        background: linear-gradient(90deg, #ffd700, #cc8800);
-        border-radius: 4px;
-        transition: width 0.12s ease-out;
-      }
-      #game-canvas {
-        display: block;
-        width: 100%;
-        height: 100%;
-        touch-action: none;
-      }
-      #icon-btn {
-        position: fixed;
-        bottom: 8px;
-        right: 8px;
-        z-index: 200;
-        font-size: 10px;
-        padding: 6px 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="splash" aria-hidden="true">
-      <span class="cross" role="img" aria-label="cross">✝️</span>
-      <h1>BIBLE HEROES RUN</h1>
-      <p id="splash-loading">Loading Bible Adventures...</p>
-      <div id="splash-bar-wrap" aria-hidden="true">
-        <div id="splash-bar"></div>
-      </div>
-    </div>
-    <canvas id="game-canvas"></canvas>
-    <button
-      type="button"
-      id="icon-btn"
-      style="display: none"
-      title="Download 1024×1024 app icon"
-    >
-      Download Icon
-    </button>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+    content="width=device-width,initial-scale=1">
+  <title>Bible Heroes Run — Support</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 700px; margin: 40px auto; padding: 20px; line-height: 1.8; color: #333; background: #f9f9f9; }
+    h1 { color: #1a0a3e; }
+    h2 { color: #2d1b6e; }
+    .badge { background: #1a0a3e; color: #FFD700; padding: 8px 16px; border-radius: 8px; display: inline-block; margin-bottom: 20px; font-family: monospace; }
+    a { color: #2d1b6e; }
+  </style>
+</head>
+<body>
+  <div class="badge">Bible Heroes Run</div>
+  <h1>Bible Heroes Run — Support</h1>
+  <p><em>Adventures of Joshua and Caleb — 1000 Bible Story Levels!</em></p>
+  <h2>Support</h2>
+  <p>Need help? Email us at <a href="mailto:jamesdlee77@gmail.com">jamesdlee77@gmail.com</a></p>
+  <h2>About</h2>
+  <p>Bible Heroes Run is a free educational platformer game featuring 1000 levels teaching children Bible stories from Genesis to Revelation. No ads, no in-app purchases.</p>
+  <h2>FAQ</h2>
+  <h3>Is the game free?</h3>
+  <p>Yes — completely free, no ads, no purchases, all 1000 levels included.</p>
+  <h3>What age is it for?</h3>
+  <p>Ages 4 and up. Difficulty settings help younger children enjoy it too.</p>
+  <h3>How do I use superpowers?</h3>
+  <p>Tap the yellow lightning bolt button during gameplay!</p>
+  <h3>My progress was lost</h3>
+  <p>Progress saves locally on your device. Reinstalling the app may reset progress.</p>
+  <h2>Privacy Policy</h2>
+  <p>We collect no data. See our <a href="privacy.html">full privacy policy</a>.</p>
+  <hr>
+  <p style="color:#999;font-size:0.85em">© 2026 James Lee — "Be strong and courageous!" — Joshua 1:9</p>
+</body>
 </html>
